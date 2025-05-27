@@ -1,8 +1,10 @@
 import os
 
 def check(fileName, Path):
-    filePath = os.path.join(Path, fileName)
-    if os.path.exists(filePath):
-        print('Yeah the file exists at the path')
+    dirList = os.listdir(Path)
+    if fileName in dirList :
+        print('file exist on the path')
     else:
-        print('Nope the file doesn\'t exist at the path')
+        print('file does not exist on the path')
+
+
