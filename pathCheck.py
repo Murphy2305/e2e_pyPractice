@@ -8,3 +8,4 @@ def check(fileName, Path):
         print('file does not exist on the path')
 
 
+check('test','/Users/kushalshekhawat/Downloads')
